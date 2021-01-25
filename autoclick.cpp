@@ -1,7 +1,5 @@
 #include <windows.h>
 #include <iostream>
-int x;
-int y;
 bool started = false;
 void start() {
     while (true) {
