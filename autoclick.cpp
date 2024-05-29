@@ -7,7 +7,7 @@ void start() {
     std:cin >> timer;
 
     // testing
-    std:cout >> timer
+    std:cout >> timer;
 
     std:cout << "\n";'
     while (true) {
