@@ -1,7 +1,11 @@
 #include <windows.h>
 #include <iostream>
 bool started = false;
+int timer = 10;
 void start() {
+    std:cout << "Enter ms between click:";
+    std:cin >> timer;
+    std:cout << "\n";'
     while (true) {
         if (GetAsyncKeyState(VK_F10)) {
             started = !started;
@@ -12,7 +16,7 @@ void start() {
         if (started) {
             mouse_event(MOUSEEVENTF_LEFTDOWN, x, y, 0, 0);
             mouse_event(MOUSEEVENTF_LEFTUP, x, y, 0, 0);
-            Sleep(10);
+            Sleep(timer);
         }
     }
 }
