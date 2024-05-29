@@ -3,8 +3,12 @@
 bool started = false;
 int timer = 10;
 void start() {
-    std:cout << "Enter ms between click:";
+    std:cout << "Enter ms between click: \t";
     std:cin >> timer;
+
+    // testing
+    std:cout >> timer
+
     std:cout << "\n";'
     while (true) {
         if (GetAsyncKeyState(VK_F10)) {
